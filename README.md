@@ -1,2 +1,2 @@
-# ADHDad
+# FollowPeter
 Static website using Astro.
