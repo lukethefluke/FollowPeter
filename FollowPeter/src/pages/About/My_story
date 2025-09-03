@@ -1,1 +1,28 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const pageTitle = "My Story";
+const post = {
+  pageTitle: "My Story",
+  date: "2025-09-03",
+  author: "ADHDad",
+};
+---
+<Layout title={post.title}>
+  <article class="blog-post">
+    <header>
+      <h1>{post.title}</h1>
+      <p class="meta">
+        <time datetime={post.date}>{post.date}</time> · by {post.author}
+      </p>
+    </header>
 
+    <section class="content">
+      <h2>My Story</h2>
+      <p>
+        I was diagnosed with ADHD as an adult, six months after my son was diagnosed. Even during my son's assessment I had no idea what ADHD was. It wasn't until my wife encouraged me to listen to podcasts about it that I was able to identify my own story shared in the experience of others.That diagnosis is arguably the most constructive change I could make in my life. Thankfully, with 40 years of experience before this point, I was able to cut through the misinformation swirling around. I dove into the writing of experts in the field, many who are actively engaged in research, and often have ADHD themselves. I'm absolutely indebted to those psychiatrists, psychologists, ADHD life coaches and content creators. 
+
+After my diagnosis, young adults and concerned parents kept approaching me for advice. I'm not a particularly good communicator, and no sort of expert. I wanted a better way to to point them to the best resources. My scattered and forgetful brain was not the best point of contact. That's <a href="/Why_this_website?">why</a> this website was created.
+      </p>
+    </section>
+  </article>
+</Layout>
