@@ -1,8 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
-const pageTitle = "Home Page";
+const post = {
+  pageTitle: "Home",
+  date: "2025-09-05",
+  author: "ADHDad",
+};
 ---
 <Layout pageTitle={pageTitle}>
+<article class="blog-post">
+    <header>
+      <h1>{post.title}</h1>
+      <p class="meta">
+        <time datetime={post.date}>{post.date}</time> · by {post.author}
+      </p>
+    </header>
+    <section class="content">
+      <h2>Heading</h2>
+      <p>
+        Ipsum funum. 
+      </p>
+    </section>
+  </article>
   <!-- Cards -->
     <div class="card-container">
       <div class="card">
